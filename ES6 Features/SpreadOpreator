@@ -1,0 +1,9 @@
+// Spread Operator used to unpack the data
+
+let odd = [1,3,5]
+let even = [2,4,6,8,10]
+// this will add the whole aaray inside the array
+let merge = [1,3,5,even]
+// spread operator
+let merge1 = [1,3,5,...even]
+console.log(merge1)

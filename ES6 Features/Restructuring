@@ -1,0 +1,15 @@
+// Restructuring
+
+let fname = "Nitya"
+let lname = "Agarwal"
+let phn = "0"
+let sayHi=()=>console.log("Hello")
+
+let data = {fname,lname,phn,sayHi}
+console.log(data.fname)
+console.log(data.lname)
+console.log(data.phn)
+data.lname="Porwal"
+console.log(data.lname)
+data.sayHi()
+

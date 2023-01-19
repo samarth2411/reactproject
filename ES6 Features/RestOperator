@@ -1,0 +1,17 @@
+// Rest Operator used to pack the data
+function add(a,b){
+    return a+b
+}
+console.log(add(5,10))
+
+// suppose we dont know how much parameters we want 
+function restAdd(...numbers){
+    console.log(numbers)
+}
+restAdd(5,10,20,30,40,50,80,7,0)
+
+function restAdd(a,b,...numbers){
+    console.log(numbers)
+    console.log(a,b)
+}
+restAdd(5,10,20,30,40,50,80,7,0)
