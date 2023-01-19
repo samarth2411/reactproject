@@ -12,3 +12,17 @@ class Train{
 
 let obj = new Train("Pankaj","Kapoor")
 obj.display();
+
+
+
+// ES5 way to create class
+
+function Train2(){
+    this.T_fname;
+    this.T_lname;
+
+    this.display()
+    {
+        console.log(this.T_fname)
+    }
+}
