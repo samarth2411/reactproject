@@ -1,0 +1,1 @@
+// store the data into user's browser by 2 ways local and session storage 
