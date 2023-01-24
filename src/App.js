@@ -2,6 +2,10 @@ import React from "react";
 
 //Linkage to External CSS
 import './App.css';
+import CustomComponent1, { CustomComponent2 } from "./components(User Defined Components)/CustomComponent";
+import FirstComponent from "./components(User Defined Components)/FirstComponent";
+import SecondComponent from "./components(User Defined Components)/SecondComponent";
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
 // Creating image variable
 import myphoto from './Images/Formal Photo.jpg'
@@ -60,15 +64,28 @@ let mystyling = {
 function App(){
 
 
+        
+
+
     // return <h1>This is App Component</h1>
     // we want this componenet to be reuse by other components we add export
     
     
     // if we have to write more than one line of code it will give error ek time par ek hi JSX ko return kar skti hai 
     // if you have to send 2 then 
-    return (
+    return(
+
+        <>
+        <FirstComponent/>
+        <br/>
+        <SecondComponent/>
+        <br/>
+        <CustomComponent1/>
+        <br/>
+        <CustomComponent2/>
+
         
-        // <div>
+        {/* // <div>
         //     <h1>This is App Component , Line 1 </h1>
         //     <h1>This is App Component , Line 2 </h1>
         // </div>
@@ -79,9 +96,9 @@ function App(){
         //     <h1>This is App Component , Line 2 </h1>
         // </React.Fragment> 
 
-       // <></> this blank statement is also treated as react fragment
+       // <></> this blank statement is also treated as react fragment */}
 
-       <>
+       
        <div id="centreImage">
        <img src={myphoto} alt=""/>
        </div>
